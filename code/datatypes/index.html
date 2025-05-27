@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript data types</h1>
+
+    <h2>Primitive datatypes</h2>
+    <script>
+        //number datatypes
+        var num=42;
+        document.write('Number:',+num+"<br>");
+
+        //String
+        var str="Hello,JavaScript!";
+        document.write("String:"+str+"<br>");
+
+        //Boolean
+        var isTrue=true;
+        document.write("Boolean:"+isTrue+"<br>")
+
+        //undefined
+        var notDefined;
+        document.write("undefined:"+notDefined+"<br>")
+
+        //null
+        var nullvalue=null;
+        document.write("Null:"+nullvalue+"<br>")
+    </script>
+
+    <h2>Reference data types</h2>
+    <script>
+        //object
+        var person={
+            name:"john",
+            age:30
+        };
+        document.write("Object:"+JSON.stringify(person)+"<br>")
+
+        //Arrays
+        var colors=["red","green","blue"];
+        document.write("Array:"+JSON.stringify(colors)+"<br>");
+
+        //Function data types
+        function greet(name){
+            return "Hello, "+name+"!";
+        }
+        document.write("Function:"+greet("Alice")+"<br>")
+    </script>
+</body>
+</html>
