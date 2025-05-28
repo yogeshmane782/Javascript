@@ -26,5 +26,57 @@
         document.write("division:"+division+"<br>");
         document.write("modulus:"+modulus+"<br>");
     </script>
+    <h2>Assingment operator</h2>
+    <script>
+        //Assignment operators assign value to variables
+        var a=10;
+        a+=5; //equivalent to a=a+5;
+        document.write("Assignment(+=):"+a+"<br>");
+
+        a-=3;//equivalent to a-3;
+
+        document.write("Assignment (-=):"+a+"<br>");
+    </script>
+
+    <h2>Comparison operator</h2>
+    <script>
+        //Comparison operators compare values and return a boolean result
+        var num1=10;
+        var num2=2;
+
+        var isEqual=num1==num2;
+        var isNotEqual=num1!=num2;
+        var isGreaterThan=num1>num2;
+        var isLessThan=num1<num2;
+
+        document.write("Equal (==):"+isEqual+"<br>");
+        document.write("Not Equal (!=):"+isNotEqual+"<br>");
+        document.write("Greater Than (>):"+isGreaterThan+"<br>");
+        document.write("Less Than (<):"+isLessThan+"<br>");
+    </script>
+
+    <h2>Logical Operator</h2>
+    <script>
+        //Logical operators perform logical operations and return a boolean result
+        var isTrue=true;
+        var isFalse=false;
+
+        var andResult=isTrue&&isFalse;
+        var orResult=isTrue||isFalse;
+        var notResult=!isTrue;
+
+        document.write("Logical AND (&&):" +andResult+"<br>");
+        document.write("Logical OR (||):" +orResult+"<br>");
+        document.write("Logical NOT (!):" +notResult+"<br>");
+    </script>
+
+    <h2>Ternary operator</h2>
+    <script>
+        //Ternary operator is a shorthand way to write conditional statemnt
+        var age=20;
+        var canVote=(age>=18)?"Yes":"No";
+
+        document.write("Can Vote:"+canVote+"<br>")
+    </script>
 </body>
 </html>
