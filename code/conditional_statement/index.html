@@ -11,7 +11,56 @@
     <h2>If statement</h2>
     <script>
         //if statement
-        var age=25
+        var age=25;
+        if(age>=25){
+            document.write("Good Morning! <br>");
+        }
+        else{
+            document.write("Good Afternoon!<br>");
+        }
+    </script>
+
+    <h2>Else statement</h2>
+    <script>
+        //If-else statement
+        var time=14;
+        if(time<12){
+            document.write("Good morning!<br>");
+        }else{
+            document.write("Good afternoon!<br>");
+        }
+    </script>
+
+    <h2>Else if statement</h2>
+    <script>
+        //If-else if elsestatement
+        var hour=15;
+        if(hour<12){
+            document.write("Good Morning!<br>");
+        }else if(hour<18){
+            document.write("Good Afternoon!<br>")
+        }else{
+            document.write("Good Evening!<br>");
+        }
+    </script>
+
+    <h2>Switch statement</h2>
+    <script>
+        //switch statement
+        var dayOfWeek="Tuesday";
+        switch (dayOfWeek){
+            case "Monday":
+                document.write("It's monday!<br>");
+                break;
+            case "Tuesday":
+                document.write("It's is Tuesday!<br>");
+                break;
+            case "Wednesday":
+                document.write("It's Wednesday!<br>");
+                break;
+            default:
+                document.write("It's some other day!<br>")
+        }
     </script>
 </body>
 </html>
