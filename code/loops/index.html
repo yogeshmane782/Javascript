@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+    <h1>JavaScript Loops</h1>
+    
+    <h2>While Loop</h2>
+    <script>
+        //while loop
+        var count=1;
+        while (count<=5){
+            document.write("Count:"+count+"<br>");
+            count ++;
+        }
+    </script>
+    <h2>Do...While loop</h2>
+    <script>
+        //Do..while loop
+        var num=5;
+        do{
+            document.write("Number:"+num+"<br>");
+            num--;
+        }while (num>0);
+    </script>
+
+    <h2>standard for loop</h2>
+    <script>
+        //For loop
+        for (var i=1;i<=5;i++){
+            document.write("Iteration"+i+"<br>");
+        }
+    </script>
+    <h2>For-in loop (for objects and Arrays)</h2>
+    <script>
+        //For-in loop
+        var person={
+            name:'John',
+            age:30,
+            city:"New York"
+        };
+        for (var key in person){
+            document.write(key+":"+person[key]+"<br>");
+        }
+    </script>
+
+    <h2>For-of Loop (for Arrays and Iterable objects)</h2>
+    <script>
+        //for-of loop
+        var colors=["red","green","blue"];
+
+        for (var color of colors){
+            document.write("color:"+color+"<br>");
+        }
+    </script>
+    <h2>For-Each loop (for Arrays)</h2>
+    <script>
+        //for each loop
+        var fruits=["apple","banana","cherry"];
+
+        fruits.forEach(function(fruit,index){
+            document.write("Fruit at index"+index+":"+fruit+"<br>");
+        });
+    </script>
+</body>
+</html>
