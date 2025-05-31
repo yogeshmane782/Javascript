@@ -109,6 +109,51 @@
         var isNumber2Even=isEven(number2);
         document.write(number2+" is even:"+isNumber2Even+"<br>");
     </script>
+
+    <h2>Arrow Function</h2>
+    <script>
+        //Basic Arrow function
+        const greet3=(name) => {
+            return "Hello, "+name+"!";
+        };
+
+        //call the arrow function
+        const greeting=greet3("Alice");
+        document.write("Greeting:"+greeting+"<br>");
+    </script>
     
+    <h2>Arrow fucntion with one parameter (no parentheses needed)</h2>
+    <script>
+        //Arrow fucntion with one parameter (no parentheses needed)
+         const square=x=>x*x;
+
+         //call the arrow function
+         const result=square(5);
+         document.write("Square: "+result+"<br>");
+    </script>
+
+    <h2>Arrow function with no parameters</h2>
+    <script>
+        //Arrow function with no parameters (empty parentheses)
+        const getCurrentYear=()=>{
+            const year=new Date().getFullYear();
+            return year;
+        };
+
+        //call the arrow function
+        const currentYear=getCurrentYear();
+        document.write("Current Year: "+currentYear+"<br>");
+    </script>
+
+    <h2>Arrow function in a callback</h2>
+    <script>
+        //Arrow function in a callback
+        const numbers=[1,2,3,4,5];
+
+        const doubleNumbers=numbers.map(number=>number*2);
+
+        //display the result
+        document.write("Doubled Numbers: "+doubleNumbers.join(", ")+"<br>");
+    </script>
 </body>
 </html>
