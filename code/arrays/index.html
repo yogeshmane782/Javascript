@@ -24,5 +24,80 @@
             document.write("Colors: " + colors + "<br>");
             document.write("Numbers: " + numbers + "<br>");
         </script>
+
+        <h2>Accessing Array eleents</h2>
+        <script>
+            //accessubg array elements by index
+            var fruits=["apple","banana","cherry"]
+            var firstFruit=fruits[0];
+            var secondFruit=fruits[1];
+            
+            //display elements
+
+         document.write('First Fruit:'+firstFruit+"<br>");
+         document.write('First Fruit:'+firstFruit+"<br>");
+        </script>
+
+        <h2>Modifying Array elements</h2>
+        <script>
+                //modifying array elements by index
+                var animals=['dog','cat','rabbit'];
+                animals[1]='parrot';
+                
+                document.write((animals))
+        </script>
+
+        <h2>Array Methods</h2>
+        <script>
+            //Adding elements to an array (push)
+             var fruits=['apple','banana','mango'];
+        
+             //Removing element from the end of the array (pop)
+                var removedFruit=fruits.pop();
+
+             //Adding elements to the beginning of an array (unshift)
+             fruits.unshift('kiwi');
+
+            // //Removing elements from the beginning of an array (shift)
+             var removeFruit2=fruits.shift();
+
+            // //Length of array
+             var arraylength=fruits.length;
+
+            // //Joining array elemtns into a string
+             var joinedFruits=fruits.join(", ");
+
+            // //Finding the index of an element
+             var indexofbanana=fruits.indexOf('banana');
+    
+            // //Reversing the order of elements
+             var reversedFruits=fruits.slice().reverse();
+
+            //Sorting elements alphabetically
+             var SortedFruits=fruits.slice().sort();
+
+            //Slicing a portion of the array
+            var splicedFruits=fruits.slice(1,4);
+
+            //Splicing elements into the array
+            fruits.splice(2,0,"grape","kiwi");
+
+            //Removing elemtns by splicing
+            var removeElements =fruits.splice(1,2);
+
+            // //Display Array method
+             document.write(':'+fruits+"<br>");
+              document.write('Removed fruit (pop):'+fruits+"<br>");
+             document.write('Removed fruit (shift):'+fruits+"<br>");
+             document.write('Array Length:'+arraylength+"<br>");
+             document.write('Joined Array:'+joinedFruits+"<br>");
+             document.write('Index of banana:'+indexofbanana+"<br>");
+             document.write('Reverse Array:'+reversedFruits+"<br>");
+            document.write('Sorted Array:'+SortedFruits+"<br>");
+             document.write('Spliced Array:'+splicedFruits+"<br>");
+             document.write('Spliced Array:'+fruits+"<br>");
+            document.write('Removed Elements (splice):'+removeElements+"<br>");
+        </script>
+
 </body>
 </html>
