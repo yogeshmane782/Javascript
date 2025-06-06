@@ -6,6 +6,67 @@
     <title>Creating and working with objects</title>
 </head>
 <body>
-    
+    <h1>Creating and Working with Objects</h1>
+
+    <h2>Creating Object</h2>
+    <script>
+        //Creating an empty object
+        var person={};
+
+        //Creating an object with properties
+        var car={
+            make:"Toyota",
+            model:"Camry",
+            year:"2022"
+        };
+
+        //Display objects
+        document.write("Person: "+JSON.stringify(person)+"<br>");
+        document.write("Car: "+JSON.stringify(car) +"<br>");
+    </script>
+        <h2>Accessing Object properties</h2>
+    <script>
+        //Accessing object properties using dot notation
+        var carMake=car.make;
+        var carModel=car.model;
+
+        //Accessing object properties using bracket notation
+        var carYear=car['year'];
+
+        //Display accessed properties
+        document.write("Car Make:"+carMake+"<br>");
+        document.write("Car Model:"+carModel+"<br>");
+        document.write("Car Year:"+carYear+"<br>");
+    </script>
+
+    <h2>Modifying Object Properties</h2>
+    <script>
+        //Modifying Object Properties
+        car.year=2023;
+        car["color"]="blue";
+
+        //Display modified object
+        document.write("Modified Car: "+JSON.stringify(car));
+    </script>
+     
+     <h2>Adding and Deleting Object Properties</h2>
+     <script>
+        //Adding a new property
+        car.price=25000;
+
+        //Deleting a Property
+        delete car.model;
+
+        //Display updated object
+        document.write("Updated car: "+JSON.stringify(car)+"<br>");
+     </script>
+     
+    <h2>Looping Through object properties</h2>
+    <script>
+        for (var key in car){
+            var value=car[key];
+            document.write("Key:", +key+ ", Value: " + value + "<br>");
+        }
+    </script>
 </body>
 </html>
