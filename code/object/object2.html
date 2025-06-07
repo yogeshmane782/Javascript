@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object properties, Methods,and Destructuring</title>
+</head>
+<body>
+    <h1>Object Properties,Methods, and Destructuring</h1>
+
+    <h2>Object Properties and Methods</h2>
+    <script>
+        //Creating an object with properties and a method
+        var person={
+            firstName:"John",
+            lastName:"Doe",
+            age:30,
+            greet:function(){
+                return "Hello, " + this.firstName+" "+this.lastName + "!";
+            }
+        };
+
+        //Accessing object Properties
+        var firstName=person.firstName;
+        var lastName=person["lastName"];
+
+        //calling an object method
+        var greeting=person.greet();
+
+        //Display properties and method result
+        document.write("First Name: "+firstName+"<br>");
+        document.write("Last Name: " +lastName+ "<br>");
+        document.write("Greeting: "+greeting+ "<br>");
+    </script>
+
+    <h2>Object Destructuring</h2>
+    <script>
+        //Object Destructuring
+        var { firstName,lastName,age}=person;
+
+        //Display desturctured properties
+        document.write("Destructured First Name: "+ firstName+"<br>");
+        document.write("Destructured Last Name: "+ lastName+"<br>");
+        document.write("Destructured Age: "+ age+"<br>");
+    </script>
+</body>
+</html>
