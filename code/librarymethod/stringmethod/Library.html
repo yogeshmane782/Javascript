@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript predefined/Library Methods</title>
+</head>
+<body>
+    <h1>JavaScript predefined/Library Methods</h1>
+
+    <h2>String Method</h2>
+
+    <script>
+        //String methods
+
+        var text="Hello, World!";
+        var length=text.length; //length of a string
+        var upperCase=text.toUpperCase();//Convert to uppercase
+        var lowercase=text.toLowerCase();//convert to lowercase
+        var substring=text.substring(0,5);//Get a substring
+        var indexOfW=text.indexOf("W");//Find the index of a character
+        var replaceText=text.replace("World","JavaScript");//Replace text
+
+        //Display string method results
+        document.write("Length of String: " + length + "<br>");
+        document.write("Uppercase: " + upperCase + "<br>");
+        document.write("Lowercase: " + lowercase + "<br>");
+        document.write("Substring: " + substring + "<br>");
+        document.write("Index of 'W': " + indexOfW + "<br>");
+        document.write("Replaced Text: " + replaceText + "<br>");
+    </script>
+
+    <h2>Array Methods</h2>
+
+    <script>
+        //Array methods
+        var numbers=[1,2,3,4,5];
+        var joinedArray=numbers.join(", ");  //Join array elements into a string
+        var copiedArray=numbers.slice();//copy an array
+        var reverseArray=numbers.reverse();//Reverse arrays elements
+        var sortedArray=numbers.slice().sort();//Sort array elements
+        var removedElement=numbers.pop();//Remove the last element
+
+        // Display array method results
+            document.write("Joined Array: " + joinedArray + "<br>");
+            document.write("Copied Array: " + copiedArray + "<br>");
+            document.write("Reversed Array: " + reverseArray + "<br>");
+            document.write("Sorted Array: " + sortedArray + "<br>");
+            document.write("Removed Element (pop): " + removedElement + "<br>");
+    </script>
+
+    <h2>Date methods</h2>
+
+    <script>
+        //date methods
+        var currentDate=new Date();
+        var year=currentDate.getFullYear();
+        var month=currentDate.getMonth();
+        var day=currentDate.getDate();
+        var hours=currentDate.getHours();
+        var minutes=currentDate.getMinutes(); //
+
+        //Display date method results
+        document.write("Current Year:"+year+"<br>");
+        document.write("Current Month:"+month+"<br>");
+        document.write("Current Day:"+day+"<br>");
+        document.write("Current Hour:"+hours+"<br>");
+        document.write("Current Minutes:"+minutes+"<br>");
+
+
+    </script>
+</body>
+</html>
