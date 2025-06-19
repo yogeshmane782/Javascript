@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure concept in JavaScript</title>
+</head>
+<body>
+    <script>
+        //outer function
+        function outerFunction(){
+            var outerVariable="I'm from the outer function";
+            
+            //Inner function (closure)
+            function innerFunction(){
+                //Inner function can access the outer variable
+                return "Inner Function: "+outerVariable;
+            }
+            //Return the inner Function (closure)
+            return innerFunction;
+        }
+
+        //create a closure
+        var closure=outerFunction();
+
+        //call the closure
+        var result=closure();
+
+        //Display the result
+        document.write(result+"<br>");
+    </script>
+    <h2>Example 2:Closure with Parameters</h2>
+    <script>
+        function createMultiplier(factor){
+            //outer function takes a parameter
+
+            //Inner function (closure)
+            function multiplier(number){
+                //Inner function can access the outer parameter
+                return number*factor;
+            }
+            //Return the inner function (closure)
+            return multiplier;
+        }
+        //create closures with different factors
+        var double=createMultiplier(2);
+        var triple=createMultiplier(3);
+
+        //use closures to perform multiplication
+        var result1=double(5);  // 2 * 5 = 10
+        var result2=triple(5);   // 3 * 5 = 15
+
+        //Display the result 
+        document.write("Double: "+result1+"<br>");
+        document.write("triple: "+result2+"<br>");
+    </script>
+</body>
+</html>
