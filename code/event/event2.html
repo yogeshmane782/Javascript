@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Events</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 30px; }
+        .color-box {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: lightgray;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+        #typedText {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<h2>🎨 Color Changer & Live Typing</h2>
+
+<div class="color-box" id="box">Hover me!</div>
+
+<input type="text" id="liveInput" placeholder="Type something...">
+<p id="typedText">You typed: </p>
+
+<script src="./script2.js"></script>
+</body>
+</html>
